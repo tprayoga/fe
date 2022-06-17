@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
 
 export default function Home() {
@@ -17,13 +18,23 @@ export default function Home() {
             <div className="flex justify-center items-center">
               <Link href="/dashboard">
                 <a>
-                  <img src="./logo.png" alt="logo" />
+                  <Image
+                    src="/logo.png"
+                    alt="/logo.png"
+                    layout="fixed"
+                    width={33}
+                    height={33}
+                  />
                 </a>
               </Link>
             </div>
             <div className="flex justify-center items-center">
-              <p className="mr-3 text-gray-600 cursor-pointer hover:text-black ">Contact</p>
-              <p className=" text-gray-600 border-2 p-2 cursor-pointer rounded-md hover:text-black hover:border-black">Sign Up</p>
+              <p className="mr-3 text-gray-600 cursor-pointer hover:text-black ">
+                Contact
+              </p>
+              <p className=" text-gray-600 border-2 p-2 cursor-pointer rounded-md hover:text-black hover:border-black">
+                Sign Up
+              </p>
             </div>
           </div>
         </div>
@@ -38,11 +49,15 @@ export default function Home() {
                 Continue with GitHub
               </h1>
             </div>
-            <h1 className="text-md mt-5 text-sky-500 cursor-pointer hover:underline">Continue with Email →</h1>
+            <h1 className="text-md mt-5 text-sky-500 cursor-pointer hover:underline">
+              Continue with Email →
+            </h1>
           </div>
         </div>
         <div className="flex justify-center items-center border-t-2 p-12">
-          <h1 className="text-md text-sky-500 cursor-pointer hover:underline">Don't have an account? Sign Up →</h1>
+          <h1 className="text-md text-sky-500 cursor-pointer hover:underline">
+            Don't have an account? Sign Up →
+          </h1>
         </div>
       </main>
 

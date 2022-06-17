@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { CgProfile } from "react-icons/cg";
 import { BsChevronExpand } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
@@ -34,7 +35,13 @@ const Navbar = () => {
         <div className="flex justify-center items-center">
           <Link href="/">
             <a>
-              <img src="./logo.png" alt="logo" />
+              <Image
+                src="/logo.png"
+                alt="./logo.png"
+                layout="fixed"
+                width={33}
+                height={33}
+              />
             </a>
           </Link>
 
@@ -47,7 +54,14 @@ const Navbar = () => {
           </Link>
           <p>User</p>
           <div>
-            <p id="basic-button" aria-controls={open ? "basic-menu" : undefined} aria-haspopup="true" aria-expanded={open ? "true" : undefined} onClick={handleClick} className="ml-1 p-2 cursor-pointer hover:bg-gray-400 hover:rounded-md">
+            <p
+              id="basic-button"
+              aria-controls={open ? "basic-menu" : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? "true" : undefined}
+              onClick={handleClick}
+              className="ml-1 p-2 cursor-pointer hover:bg-gray-400 hover:rounded-md"
+            >
               <BsChevronExpand />
             </p>
             <Menu
@@ -62,9 +76,15 @@ const Navbar = () => {
               <div>
                 <div className="flex justify-center items-center pl-5 border-b-2">
                   <BsSearch className=" text-gray-500" />
-                  <input type="text" placeholder="Search" className=" outline-none p-2 hover:outline-none" />
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    className=" outline-none p-2 hover:outline-none"
+                  />
                 </div>
-                <p className="px-5 py-2 text-gray-500 font-normal text-sm">Personal Account</p>
+                <p className="px-5 py-2 text-gray-500 font-normal text-sm">
+                  Personal Account
+                </p>
                 <div className=" cursor-pointer mx-2 py-2 flex justify-between rounded-md items-center hover:bg-gray-300">
                   <div className="flex items-center">
                     {" "}
@@ -85,9 +105,20 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <p className="mr-3 text-gray-600 border-2 p-2 cursor-pointer rounded-md hover:text-black hover:border-black">Feedback</p>
-          <p className="mr-3 text-gray-600 cursor-pointer hover:text-black ">Docs</p>
-          <p id="basic-button1" aria-controls={dropdownOpen ? "basic-menu1" : undefined} aria-haspopup="true" aria-expanded={dropdownOpen ? "true" : undefined} onClick={handleDropdown} className=" cursor-pointer">
+          <p className="mr-3 text-gray-600 border-2 p-2 cursor-pointer rounded-md hover:text-black hover:border-black">
+            Feedback
+          </p>
+          <p className="mr-3 text-gray-600 cursor-pointer hover:text-black ">
+            Docs
+          </p>
+          <p
+            id="basic-button1"
+            aria-controls={dropdownOpen ? "basic-menu1" : undefined}
+            aria-haspopup="true"
+            aria-expanded={dropdownOpen ? "true" : undefined}
+            onClick={handleDropdown}
+            className=" cursor-pointer"
+          >
             {" "}
             <CgProfile className=" text-3xl" />
           </p>
@@ -124,10 +155,14 @@ const Navbar = () => {
       </div>
       <div className="container flex mx-auto cursor-pointer">
         <div className="mx-1 border-b-2 border-black">
-          <p className="mb-2 p-1 rounded-md hover:bg-gray-300 hover:text-black">Projects</p>
+          <p className="mb-2 p-1 rounded-md hover:bg-gray-300 hover:text-black">
+            Projects
+          </p>
         </div>
         <div className=" ml-1 cursor-pointer">
-          <p className="mb-2 p-1 rounded-md text-black hover:bg-gray-300 hover:text-black">Setting</p>
+          <p className="mb-2 p-1 rounded-md text-black hover:bg-gray-300 hover:text-black">
+            Setting
+          </p>
         </div>
       </div>
     </div>
