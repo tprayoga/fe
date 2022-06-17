@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BiSearchAlt2, BiCoinStack, BiStar } from "react-icons/bi";
+import Link from "next/link";
 
 const Dashboard = () => {
   const [start, setStart] = useState(false);
@@ -18,7 +19,9 @@ const Dashboard = () => {
           </label>
           <div className="bg-black flex items-center justify-center rounded hover:bg-white border border-black ease-in-out duration-150 group cursor-pointer sm:w-1/3 xl:w-1/5">
             <button className="text-white px-3 group-hover:text-black sm:hidden">+</button>
-            <button className="text-white px-3 group-hover:text-black hidden sm:inline-block">+ New Project</button>
+            <Link href="/new">
+              <button className="text-white px-3 group-hover:text-black hidden sm:inline-block">+ New Project</button>
+            </Link>
           </div>
         </div>
 
