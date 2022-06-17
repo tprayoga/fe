@@ -30,7 +30,9 @@ const Navbar = () => {
   return (
     <div className="flex justify-between p-2 border-b-2">
       <div className="flex justify-center items-center">
-        <a href="#">LOGO</a>
+        <a href="#">
+          <img src="./logo.png" alt="logo" />
+        </a>
         <p className=" text-2xl mx-2 text-gray-500">/</p>
         <a href="#" className="mr-2">
           {" "}
@@ -38,7 +40,14 @@ const Navbar = () => {
         </a>
         <p>User</p>
         <div>
-          <p id="basic-button" aria-controls={open ? "basic-menu" : undefined} aria-haspopup="true" aria-expanded={open ? "true" : undefined} onClick={handleClick} className="ml-1 p-2 cursor-pointer hover:bg-gray-400 hover:rounded-md">
+          <p
+            id="basic-button"
+            aria-controls={open ? "basic-menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
+            onClick={handleClick}
+            className="ml-1 p-2 cursor-pointer hover:bg-gray-400 hover:rounded-md"
+          >
             <BsChevronExpand />
           </p>
           <Menu
@@ -53,9 +62,15 @@ const Navbar = () => {
             <div>
               <div className="flex justify-center items-center pl-5 border-b-2">
                 <BsSearch className=" text-gray-500" />
-                <input type="text" placeholder="Search" className=" outline-none p-2 hover:outline-none" />
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className=" outline-none p-2 hover:outline-none"
+                />
               </div>
-              <p className="px-5 py-2 text-gray-500 font-normal text-sm">Personal Account</p>
+              <p className="px-5 py-2 text-gray-500 font-normal text-sm">
+                Personal Account
+              </p>
               <div className=" cursor-pointer mx-2 py-2 flex justify-between rounded-md items-center hover:bg-gray-300">
                 <div className="flex items-center">
                   {" "}
@@ -76,9 +91,20 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <p className="mr-3 text-gray-600 border-2 p-2 cursor-pointer rounded-md hover:text-black hover:border-black">Feedback</p>
-        <p className="mr-3 text-gray-600 cursor-pointer hover:text-black ">Docs</p>
-        <p id="basic-button1" aria-controls={dropdownOpen ? "basic-menu1" : undefined} aria-haspopup="true" aria-expanded={dropdownOpen ? "true" : undefined} onClick={handleDropdown} className=" cursor-pointer">
+        <p className="mr-3 text-gray-600 border-2 p-2 cursor-pointer rounded-md hover:text-black hover:border-black">
+          Feedback
+        </p>
+        <p className="mr-3 text-gray-600 cursor-pointer hover:text-black ">
+          Docs
+        </p>
+        <p
+          id="basic-button1"
+          aria-controls={dropdownOpen ? "basic-menu1" : undefined}
+          aria-haspopup="true"
+          aria-expanded={dropdownOpen ? "true" : undefined}
+          onClick={handleDropdown}
+          className=" cursor-pointer"
+        >
           {" "}
           <CgProfile className=" text-3xl" />
         </p>
