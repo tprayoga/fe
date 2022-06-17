@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 
 export default function Home() {
@@ -13,9 +14,11 @@ export default function Home() {
       <main>
         <div className="flex justify-between p-2 border-b-2">
           <div className="flex justify-center items-center">
-            <a href="/dashboard">
-              <img src="./logo.png" alt="logo" />
-            </a>
+            <Link href="/dashboard">
+              <a>
+                <img src="./logo.png" alt="logo" />
+              </a>
+            </Link>
           </div>
           <div className="flex justify-center items-center">
             <p className="mr-3 text-gray-600 cursor-pointer hover:text-black ">

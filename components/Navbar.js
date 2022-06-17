@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { CgProfile } from "react-icons/cg";
 import { BsChevronExpand } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
@@ -30,14 +31,19 @@ const Navbar = () => {
   return (
     <div className="flex justify-between p-2 border-b-2">
       <div className="flex justify-center items-center">
-        <a href="#">
-          <img src="./logo.png" alt="logo" />
-        </a>
+        <Link href="/">
+          <a>
+            <img src="./logo.png" alt="logo" />
+          </a>
+        </Link>
+
         <p className=" text-2xl mx-2 text-gray-500">/</p>
-        <a href="#" className="mr-2">
-          {" "}
-          <CgProfile className=" text-3xl" />
-        </a>
+        <Link href="#">
+          <a className="mr-2">
+            {" "}
+            <CgProfile className=" text-3xl" />
+          </a>
+        </Link>
         <p>User</p>
         <div>
           <p
