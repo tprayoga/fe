@@ -1,6 +1,7 @@
 import Head from "next/head";
 import NewProject from "../components/NewProject";
 import Dashboard from "../components/Dashboard";
+import DetailProjecct from "../components/DetailProjecct";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <NewProject />
+        <DetailProjecct />
       </main>
 
       <footer></footer>
