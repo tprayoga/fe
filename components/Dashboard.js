@@ -9,7 +9,7 @@ const Dashboard = () => {
     <>
       <div className="h-screen md:px-20 pl-2 pr-4 bg-[#FAFAFA]">
         {/* SEARCH BAR */}
-        <div className="flex mt-4 mb-4 w-full gap-4">
+        <div className="flex pt-4 mb-4 w-full gap-4">
           <label class="relative w-full ">
             <span class="absolute inset-y-0 left-0 flex items-center pl-2">
               <BiSearchAlt2 className="text-slate-400 text-xl" />
