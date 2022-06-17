@@ -1,4 +1,5 @@
 import Head from "next/head";
+import NewProject from "../components/NewProject";
 import Dashboard from "../components/Dashboard";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Dashboard />
+        <NewProject />
       </main>
 
       <footer></footer>
