@@ -91,12 +91,25 @@ const Navbar = () => {
             "aria-labelledby": "basic-button1",
           }}
         >
-          <MenuItem>Dashboard</MenuItem>
-          <MenuItem>New Team</MenuItem>
-          <MenuItem>Settings</MenuItem>
-          <MenuItem>Theme</MenuItem>
-          <MenuItem>Command Menu</MenuItem>
-          <MenuItem>Logout</MenuItem>
+          <div className=" p-1 border-b-2">
+            <MenuItem>Dashboard</MenuItem>
+          </div>
+          <div className="p-1 border-b-2 text-gray-500 hover:text-black">
+            <MenuItem className="flex items-center justify-between">
+              <div>New Team</div>
+              <div className="ml-9 text-xl">+</div>
+            </MenuItem>
+            <MenuItem>Settings</MenuItem>
+          </div>
+          <div className=" p-1 border-b-2 text-gray-500 hover:text-black">
+            <MenuItem>Theme</MenuItem>
+          </div>
+          <div className="p-1 border-b-2 text-gray-500 hover:text-black">
+            <MenuItem>Command Menu</MenuItem>
+          </div>
+          <div className="pt-1 pl-1 text-gray-500 hover:text-black">
+            <MenuItem>Logout</MenuItem>
+          </div>
         </Menu>
       </div>
     </div>
