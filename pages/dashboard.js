@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { BsGithub } from "react-icons/bs";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
@@ -11,16 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="flex justify-between p-2 border-b-2">
-          <div className="flex justify-center items-center">
-            <a href="/dashboard">LOGO</a>
-          </div>
-          <div className="flex justify-center items-center">
-            <p className="mr-3 text-gray-600 cursor-pointer hover:text-black ">Contact</p>
-            <p className=" text-gray-600 border-2 p-2 cursor-pointer rounded-md hover:text-black hover:border-black">Sign Up</p>
-          </div>
-        </div>
-
+        <Navbar />
         <div className="flex h-[80vh] justify-center items-center">
           <div className=" text-center">
             <h1 className=" text-3xl font-bold">Log in to Khayangan</h1>
